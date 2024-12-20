@@ -1,6 +1,6 @@
 // src/components/Header.jsx
 import React from "react";
-import './Header.css'; // Import the external CSS
+import './header.css'; // Import the external CSS
 import { NavLink } from "react-router-dom";
 
 const Header = () => {

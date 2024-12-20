@@ -1,0 +1,46 @@
+/* src/components/Header.css */
+
+.header-container {
+  text-align: center;
+  padding: 32px;
+  background-color: #f4f4f4;
+}
+
+.header-container h1 {
+  font-size: 2rem;
+  margin-bottom: 16px;
+}
+
+.header-container p {
+  font-size: 1.25rem;
+  color: #555;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .header-container {
+    padding: 24px;
+  }
+
+  .header-container h1 {
+    font-size: 1.75rem;
+  }
+
+  .header-container p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-container {
+    padding: 16px;
+  }
+
+  .header-container h1 {
+    font-size: 1.5rem;
+  }
+
+  .header-container p {
+    font-size: 0.875rem;
+  }
+}

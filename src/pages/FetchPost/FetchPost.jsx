@@ -8,7 +8,7 @@ function FetchPost() {
   // Fetch posts from the backend
   const fetchPosts = async () => {
     try {
-      const response = await axios.get('http://localhost:8000/api/posts');
+      const response = await axios.get('https://blogpostbackend-e1f0.onrender.com/api/posts');
       setPosts(response.data);
       setLoading(false);
     } catch (error) {
@@ -33,7 +33,7 @@ function FetchPost() {
               <div key={post._id} className="flex flex-col items-center border p-6 rounded-lg shadow-lg bg-white">
                 {post.image && (
                   <img
-                    src={post.image.startsWith('http') ? post.image : `http://localhost:8000/${post.image}`}
+                    src={post.image.startsWith('http') ? post.image : `https://blogpostbackend-e1f0.onrender.com/${post.image}`}
                     alt={post.title}
                     className="mb-4 rounded-lg w-full h-48 object-cover"
                   />

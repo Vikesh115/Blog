@@ -14,7 +14,7 @@ function Home() {
   const fetchPosts = async () => {
     setLoading(true);
     try {
-      const response = await axios.get("http://localhost:8000/api/posts");
+      const response = await axios.get("https://blogpostbackend-e1f0.onrender.com/api/posts");
       setPosts(response.data);
     } catch (error) {
       console.error("Error fetching posts:", error);
@@ -39,7 +39,7 @@ function Home() {
       setActionLoading(true);
       try {
         const response = await axios.delete(
-          `http://localhost:8000/api/posts/${postId}`,
+          `https://blogpostbackend-e1f0.onrender.com/api/posts/${postId}`,
           { headers: { Authorization: `Bearer ${token}` } }
         );
 
@@ -81,7 +81,7 @@ function Home() {
 
     try {
       const response = await axios.put(
-        `http://localhost:8000/api/posts/${editingPost._id}`,
+        `https://blogpostbackend-e1f0.onrender.com/api/posts/${editingPost._id}`,
         { title, content },
         { headers: { Authorization: `Bearer ${token}` } }
       );

@@ -34,7 +34,7 @@ function CreatePost() {
       }
 
       // Make the request to the backend with the token in the Authorization header
-      const response = await axios.post('http://localhost:8000/api/posts', postData, {
+      const response = await axios.post('https://blogpostbackend-e1f0.onrender.com/api/posts', postData, {
         headers: {
           'Authorization': `Bearer ${token}`, // Include the token in the Authorization header
           'Content-Type': 'application/json',

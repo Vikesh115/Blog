@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
-// import Header from "../../components/Header/Header";
+import Header from "../../components/Header/Header";
 
-// function Home() {
+function Home() {
   const [posts, setPosts] = useState([]);
   const [loading, setLoading] = useState(true);
   const [editingPost, setEditingPost] = useState(null);

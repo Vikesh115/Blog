@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
-import Header from "../../components/Header/Header";
+// import Header from "../../components/Header/Header";
 
-function Home() {
+// function Home() {
   const [posts, setPosts] = useState([]);
   const [loading, setLoading] = useState(true);
   const [editingPost, setEditingPost] = useState(null);
@@ -122,6 +122,7 @@ function Home() {
                 className="border p-4 rounded-md shadow-sm hover:shadow-lg transition"
               >
                 <h3 className="text-xl font-semibold">{post.title}</h3>
+                <img src={post.image} alt={post.title} className="flex w-[200px]"/>
                 <p>{post.content.substring(0, 100)}...</p>
                 <div className="mt-2 flex space-x-4">
                   <button
